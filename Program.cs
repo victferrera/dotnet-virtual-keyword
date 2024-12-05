@@ -12,14 +12,22 @@ class Program
         // DerivedClassWithChanges derivedClassWithChanges = new DerivedClassWithChanges();
         // derivedClassWithChanges.Hello("John");
 
-        Shape circle = new Circle(2.5);
-        Console.WriteLine("Circle area: {0:F2}", circle.FindArea());
+        // Shape circle = new Circle(2.5);
+        // Console.WriteLine("Circle area: {0:F2}", circle.FindArea());
+        //
+        // Shape square = new Square(5);
+        // Console.WriteLine("Square area: {0:F2}", square.FindArea());
+        //
+        // Shape rectangle = new Rectangle(15, 20);
+        // Console.WriteLine("Rectangle area: {0:F2}", rectangle.FindArea());
 
-        Shape square = new Square(5);
-        Console.WriteLine("Square area: {0:F2}", square.FindArea());
-
-        Shape rectangle = new Rectangle(15, 20);
-        Console.WriteLine("Rectangle area: {0:F2}", rectangle.FindArea());
+        char val1 = 'a';
+        string val2 = "John";
+        
+        CompanyA company = new CompanyA();
+        company.DoWork(val1);
+        company.DoWork(val2);
+        company.MakeNoise();
     }
 }
 
