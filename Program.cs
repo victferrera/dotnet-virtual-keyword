@@ -4,13 +4,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        DerivedClass derivedClass = new DerivedClass();
-        derivedClass.Hello("Brian");
-        derivedClass.Number = 0;
-        Console.WriteLine(derivedClass.Number);
+        // DerivedClass derivedClass = new DerivedClass();
+        // derivedClass.Hello("Brian");
+        // derivedClass.Number = 0;
+        // Console.WriteLine(derivedClass.Number);
+        //
+        // DerivedClassWithChanges derivedClassWithChanges = new DerivedClassWithChanges();
+        // derivedClassWithChanges.Hello("John");
 
-        DerivedClassWithChanges derivedClassWithChanges = new DerivedClassWithChanges();
-        derivedClassWithChanges.Hello("John");
+        Shape circle = new Circle(2.5);
+        Console.WriteLine("Circle area: {0:F2}", circle.FindArea());
+
+        Shape square = new Square(5);
+        Console.WriteLine("Square area: {0:F2}", square.FindArea());
+
+        Shape rectangle = new Rectangle(15, 20);
+        Console.WriteLine("Rectangle area: {0:F2}", rectangle.FindArea());
     }
 }
 
